@@ -4,10 +4,10 @@
 
 This project implements a **Machine Learning pipeline** to automatically classify news articles into different categories such as:
 
-- World
-- Sports
-- Business
-- Sci/Tech
+* World
+* Sports
+* Business
+* Sci/Tech
 
 The goal of this project is to demonstrate how Natural Language Processing (NLP) techniques and machine learning models can be used to perform **text classification**.
 
@@ -25,17 +25,17 @@ https://www.kaggle.com/datasets/amananandrai/ag-news-classification-dataset
 The dataset contains thousands of labeled news articles belonging to the following categories:
 
 | Label | Category |
-|------|---------|
-| 1 | World |
-| 2 | Sports |
-| 3 | Business |
-| 4 | Sci/Tech |
+| ----- | -------- |
+| 1     | World    |
+| 2     | Sports   |
+| 3     | Business |
+| 4     | Sci/Tech |
 
 Each record contains:
 
-- News Title
-- News Description
-- Category Label
+* News Title
+* News Description
+* Category Label
 
 ---
 
@@ -43,11 +43,11 @@ Each record contains:
 
 The project follows a structured machine learning workflow:
 
-1. **Data Preprocessing**
-2. **Text Feature Extraction**
-3. **Model Training**
-4. **Model Evaluation**
-5. **Best Model Selection**
+1. Data Preprocessing
+2. Text Feature Extraction
+3. Model Training
+4. Model Evaluation
+5. Best Model Selection
 
 ---
 
@@ -57,10 +57,10 @@ Before training the models, the text data is cleaned and processed.
 
 The preprocessing steps include:
 
-- Convert all text to lowercase
-- Remove special characters and punctuation
-- Remove stopwords (common words like "the", "is", "and")
-- Tokenization of text
+* Convert all text to lowercase
+* Remove special characters and punctuation
+* Remove stopwords (common words like "the", "is", "and")
+* Tokenization of text
 
 This step improves model performance by removing unnecessary noise from the data.
 
@@ -82,13 +82,16 @@ This results in a numerical representation of text that can be used by machine l
 
 The following machine learning models are implemented and compared:
 
-### 1. Logistic Regression
+### Logistic Regression
+
 A widely used algorithm for classification problems that works well with high-dimensional data.
 
-### 2. Naive Bayes
+### Naive Bayes
+
 A probabilistic classifier commonly used for text classification tasks.
 
-### 3. Linear Support Vector Machine (SVM)
+### Linear Support Vector Machine (SVM)
+
 A powerful classifier that finds the optimal hyperplane to separate classes.
 
 ---
@@ -97,13 +100,11 @@ A powerful classifier that finds the optimal hyperplane to separate classes.
 
 The models are evaluated using **accuracy on the test dataset**.
 
-Performance comparison:
-
-| Model | Accuracy |
-|------|---------|
-| Logistic Regression | ~90.8% |
-| Naive Bayes | ~89% |
-| Linear SVM | ~90.7% |
+| Model               | Accuracy |
+| ------------------- | -------- |
+| Logistic Regression | ~90.8%   |
+| Naive Bayes         | ~89%     |
+| Linear SVM          | ~90.7%   |
 
 ---
 
@@ -121,26 +122,87 @@ Final Accuracy:
 
 ## Project Folder Structure
 
-
+```
 news_classification_project/
 
-data/
-   raw/
-   processed/
+│
+├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── src/
+│   ├── data_preprocessing.py
+│   ├── feature_engineering.py
+│   ├── train.py
+│   ├── evaluate.py
+│   └── config.py
+│
+├── models/
+│   └── news_classifier.pkl
+│
+├── results/
+│   └── metrics.txt
+│
+├── requirements.txt
+├── README.md
+└── main.py
+```
 
-src/
-   data_preprocessing.py
-   feature_engineering.py
-   train.py
-   evaluate.py
-   config.py
+---
 
-models/
-   news_classifier.pkl
+## How to Run the Project
 
-results/
-   metrics.txt
+### Step 1 – Install dependencies
 
-requirements.txt
-README.md
-main.py
+```
+pip install -r requirements.txt
+```
+
+### Step 2 – Run the complete pipeline
+
+```
+python main.py
+```
+
+Running this command will:
+
+* preprocess the data
+* extract features
+* train the model
+* evaluate performance
+* print final accuracy
+
+---
+
+## Results
+
+The trained model achieved an accuracy of approximately:
+
+**90.8%**
+
+Evaluation results are stored in:
+
+```
+results/metrics.txt
+```
+
+---
+
+## GitHub Repository
+
+ GitHub repository link:
+
+```
+https://github.com/OmBawankule/news-classification
+```
+
+---
+
+## Video Explanation
+
+Add your explanation video link here:
+
+```
+[https://drive.google.com/YOUR_VIDEO_LINK]
+(https://drive.google.com/file/d/1ZbDBcTlWEwumuQBzuTiLfeIjgGNJTub_/view)
+```
