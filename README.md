@@ -120,3 +120,27 @@ Final Accuracy:
 ---
 
 ## Project Folder Structure
+
+
+news_classification_project/
+
+data/
+   raw/
+   processed/
+
+src/
+   data_preprocessing.py
+   feature_engineering.py
+   train.py
+   evaluate.py
+   config.py
+
+models/
+   news_classifier.pkl
+
+results/
+   metrics.txt
+
+requirements.txt
+README.md
+main.py
