@@ -200,9 +200,8 @@ https://github.com/OmBawankule/news-classification
 
 ## Video Explanation
 
-Add your explanation video link here:
+explanation video link :
 
 ```
-[https://drive.google.com/YOUR_VIDEO_LINK]
 (https://drive.google.com/file/d/1ZbDBcTlWEwumuQBzuTiLfeIjgGNJTub_/view)
 ```
